@@ -33,7 +33,7 @@ from shared_setup import action_target
 PACKAGE = {
     'name': 'vsc-passwords',
     'version': '0.1',
-    'install_requires': ['vsc-base >= 0.99', 'keepassdb >= 0.1.0', 'keyring >= 1.1'],
+    'install_requires': ['vsc-base >= 1.0', 'keepassdb >= 0.1.0', 'keyring >= 1.1'],
     'author': [jt],
     'maintainer': [jt],
     'scripts': ['bin/add_keys_to_keyring.py'],
