@@ -10,7 +10,7 @@ import unittest
 from vsc.utils import fancylogger
 fancylogger.logToScreen(enable=False)
 
-suite = unittest.TestSuite([x.suite() for  x in ()])
+suite = unittest.TestSuite([x.suite() for  x in ('fail')])
 
 try:
     import xmlrunner
