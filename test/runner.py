@@ -1,16 +1,16 @@
 # -*- encoding: utf-8 -*-
 import os
 import sys
+import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 
-import unittest
-
+from test import passwords as p
 
 from vsc.utils import fancylogger
 fancylogger.logToScreen(enable=False)
 
-suite = unittest.TestSuite([x.suite() for  x in ('fail')])
+suite = unittest.TestSuite([x.suite() for  x in (p, )])
 
 try:
     import xmlrunner
